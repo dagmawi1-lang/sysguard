@@ -1,0 +1,1 @@
+pytest>=8  # tests only; analyzer uses the standard library, collector uses bash + coreutils + procps
