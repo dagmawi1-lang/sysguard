@@ -2,6 +2,16 @@
 
 A **Bash collector** samples CPU, memory, swap, load, processes, logins, and listening ports straight from `/proc` and standard tools. A **Python analyzer** then finds unusual activity: crypto-miners in `/tmp`, memory leaks, fork bombs, CPU hogs, attack tools, and newly opened ports. It writes Markdown or HTML reports.
 
+![Report with CPU chart and findings, including a crypto-miner hidden in /tmp](docs/screenshot.jpg)
+
+## My role & contributions
+
+**Solo developer · AI-assisted**
+
+- Wrote the Bash collector logic for reading CPU, memory, and processes from /proc
+- Picked the warning signs to flag: binaries running from /tmp, fork bombs, memory leaks, new open ports
+- Tested the collector live on Linux and made the analyzer exit with an error code for cron alerts
+
 **Languages:** Bash · Python (standard library)
 **Shows:** Linux internals (`/proc/stat` jiffies, `/proc/meminfo`, `/proc/PID/exe`, `ss`), shell scripting, and monitoring and detection logic.
 
