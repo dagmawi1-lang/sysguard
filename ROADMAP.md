@@ -8,7 +8,7 @@
 - [x] Generate monitoring reports (Markdown, HTML with CPU chart), cron-friendly exit codes
 - [x] 5 tests including an end-to-end run of the Bash collector
 
-## Next
+## Planned improvements
 - [ ] Disk usage and I/O wait (`/proc/diskstats`)
 - [ ] Per-process network connections (`ss -tp`) to link suspicious processes to remote IPs
 - [ ] systemd timer unit and a log-rotation policy for the CSVs
